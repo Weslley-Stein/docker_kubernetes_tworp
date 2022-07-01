@@ -1,5 +1,5 @@
 ## Link da imagem no Docker Hub(pode ser visualizada diretamente no Dockerfile tambem)
-[Docker Hub](https://hub.docker.com/repository/docker/weslleystein/tworp)
+[Link da imagem no Docker Hub](https://hub.docker.com/repository/docker/weslleystein/tworp)
 
 ## OBS
 - Para testar a maquina deve ter: Docker, Minikube e Kubectl

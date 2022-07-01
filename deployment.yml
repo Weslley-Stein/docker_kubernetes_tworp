@@ -16,6 +16,13 @@ spec:
     spec:
       containers:
         - name: tworp
-          image: weslleystein/tworp
+          image: weslleystein/tworp2
+          env:
+            - name: TWORPTEST
+              valueFrom:
+                secretKeyRef:
+                  name: tworp
+                  key: TWORPTEST
           ports:
             - containerPort: 80
+

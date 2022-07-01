@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tworp
+  labels:
+    app: tworp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tworp
+  template:
+    metadata:
+      labels:
+        app: tworp
+    spec:
+      containers:
+        - name: tworp
+          image: weslleystein/tworp
+          ports:
+            - containerPort: 80
